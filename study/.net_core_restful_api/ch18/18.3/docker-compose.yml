@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fakexiecheng.api:
+    image: ${DOCKER_REGISTRY-}fakexiecheng
+    build:
+      context: .
+      dockerfile: FakeXiecheng.API/Dockerfile
